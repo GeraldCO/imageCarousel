@@ -1,0 +1,70 @@
+/* layout container: image + next button to its right */
+#carousel-container{
+  width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* image display area */
+#image-display{
+  position: relative;
+  width: 600px;
+  height: auto;
+}
+
+/* prev button placed left-middle of the image */
+#carousel-controllers{
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carousel-controllers button{
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* circles (indicators) bottom-center of the image */
+#circles{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#image-display img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Next button to the right of the image-display (in the container) */
+#next.right-next{
+  /* basic styling so it's vertically centered by flex container */
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.circle{
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.circle.selected{
+  background-color: red;
+}
+
+
+#navigationDotsContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
